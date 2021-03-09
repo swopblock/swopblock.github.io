@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.95" height="17.95" viewBox="0 0 17.95 17.95">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#5d707f"/>
+      <stop offset="0.399" stop-color="#7e9199"/>
+      <stop offset="0.774" stop-color="#97aaae"/>
+      <stop offset="1" stop-color="#a1b4b6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#00d67a" stop-opacity="0.698"/>
+      <stop offset="0.083" stop-color="#00d67a" stop-opacity="0.576"/>
+      <stop offset="0.213" stop-color="#00d67a" stop-opacity="0.4"/>
+      <stop offset="0.35" stop-color="#00d67a" stop-opacity="0.255"/>
+      <stop offset="0.491" stop-color="#00d67a" stop-opacity="0.141"/>
+      <stop offset="0.64" stop-color="#00d67a" stop-opacity="0.063"/>
+      <stop offset="0.802" stop-color="#00d67a" stop-opacity="0.016"/>
+      <stop offset="1" stop-color="#00d67a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_24" data-name="Group 24" transform="translate(-855.267 -698.256)">
+    <circle id="Ellipse_19" data-name="Ellipse 19" cx="8.975" cy="8.975" r="8.975" transform="translate(855.267 698.256)" opacity="0.75" fill="url(#linear-gradient)"/>
+    <circle id="Ellipse_21" data-name="Ellipse 21" cx="7.024" cy="7.024" r="7.024" transform="translate(857.218 700.207)" fill="#00d67a"/>
+    <circle id="Ellipse_24" data-name="Ellipse 24" cx="7.024" cy="7.024" r="7.024" transform="translate(857.218 700.207)" fill="url(#linear-gradient-2)" style="mix-blend-mode: multiply;isolation: isolate"/>
+  </g>
+</svg>
