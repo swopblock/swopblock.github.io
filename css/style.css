@@ -160,6 +160,7 @@ a.navbar-brand img {
 a.nav-link.custom-btn {
 	
 	color: #F3F8F3;
+	font-family: guidaBold !important;
 	padding: 5px 40px 6px 40px !important;
 	border-radius: 50px;
 	margin: 0 12px 0 14px;
@@ -485,6 +486,7 @@ section.working h4 span {
 
 section.working a {
 	color: #F3F8F3;
+	font-family: guidaBold !important;
 	font-feature-settings: "ss01";
 	padding: 14px 51px 15px 51px;
 	border-radius: 50px;
@@ -642,6 +644,7 @@ form.sign-up-orm input[type="email"] {
 form.sign-up-orm a {
 	font-feature-settings: "ss01";
 	white-space: nowrap;
+	font-family: guidaBold !important;
 	color: #F3F8F3;
 	padding: 14px 51px 15px 51px;
 	border-radius: 50px;
