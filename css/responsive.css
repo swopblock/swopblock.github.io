@@ -449,7 +449,9 @@
 }
 
 @media (max-width:767px) {
-	
+	.spaceThank{
+	width: 100%;
+}
 	.contactSpace
 	{
 		padding-top:80px;

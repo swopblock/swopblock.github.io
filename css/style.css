@@ -88,6 +88,10 @@ img {
 	display: block;
 }
 
+.spaceThank{
+	width: 450px;
+}
+
 .graphMobile{
 	display:none;
 }
