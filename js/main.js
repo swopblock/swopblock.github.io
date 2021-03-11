@@ -29,7 +29,7 @@ function ConfirmMessage()
 {
 	var em = document.getElementById("confirmEmail");
 	var dc = document.getElementById("displaychange");
-	dc.style.Display = "none";
+	dc.style.display = "block";
 	em.innerHTML = "<h2 style=\"color: white; padding-bottom: 12px;\">Thank you!</h2>";
 }
 
