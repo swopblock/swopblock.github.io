@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+   <head>
+	  <!-- Required meta tags -->
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="description" content="Secure peer-to-peer realtime trading between all cryptocurrencies is now possible.">
+	  <title>Color Test</title>
+   </head>
+   <body style="background-color:#30323d;">
+   
+   <style>
+		.p3 {
+			color: rgb(0, 255, 0);
+			color: color(display-p3 0 0.8392 0.4784);
+		}
+		
+		.normal {
+			color: rgb(0, 214, 122);
+		}
+		
+		@media (color-gamut: p3) {
+			.p31 {
+				color: color(display-p3 0 1 0);
+			}
+			.normal1 {
+				color: rgb(0, 255, 0);
+			}
+}
+
+:root {
+    --bright-green: rgb(0, 255, 0);
+}
+
+/* Display-P3 color, when supported. */
+@supports (color: color(display-p3 1 1 1)) {
+    :root {
+        --bright-green: color(display-p3 0 1 0);
+    }
+}
+
+.p32 {
+    color: var(--bright-green);
+}
+
+.normal2{
+    color: var(--bright-green);
+}
+
+   </style>  
+		<b class="p3">P3 COLOR | </b> <b class="normal">NORMAL COLOR</b><br><br>
+		<b class="p31">P3 COLOR | </b> <b class="normal1">NORMAL COLOR</b><br><br>
+		<b class="p32">P3 COLOR | </b> <b class="normal2">NORMAL COLOR</b><br><br>
+   </body>
+</html>
