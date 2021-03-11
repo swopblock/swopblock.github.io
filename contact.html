@@ -22,7 +22,11 @@
       <div id="preloader">
          <div id="status">&nbsp;</div>
       </div>
-
+ <script>
+	  if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
+	  </script>
       <main>
          <!-- /*
          NAVBAR
