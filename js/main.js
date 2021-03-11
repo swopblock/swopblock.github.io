@@ -12,9 +12,9 @@
 	
 	try {
 		var xhttp = new XMLHttpRequest();
-		xhttp.open("POST", "email.php", true);
+		xhttp.open("POST", "https://Swopblock.us1.list-manage.com/subscribe/post?u=2c41c6aff157499178b84b6de&amp;id=41b5fb3eb4", true);
 		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		xhttp.send("email=" + em);
+		xhttp.send("EMAIL=" + em);
 
 		console.log(xhttp.responseText);
 	}
