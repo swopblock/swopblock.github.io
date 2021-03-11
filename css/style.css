@@ -641,7 +641,7 @@ form.sign-up-orm input[type="email"] {
     border: none;
     margin: 0 72px 28px 0;
     background: #F3F8F3;
-	color: #a1b4b6;
+	color: #30323d;
 }
 
 form.sign-up-orm a {
@@ -683,6 +683,10 @@ form.sign-up-orm a:hover {
 	font-size: 15px;
 	letter-spacing: 0.5px;
 	padding: 11px 0;
+}
+
+.close{
+	text-shadow:none !important;
 }
 
 
