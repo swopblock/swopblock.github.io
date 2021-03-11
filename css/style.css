@@ -3,15 +3,15 @@
 ======================================= */
 
 @font-face {
-	font-family: 'guida';
+	font-family: 'guidaBold';
 	src: url('../font/guida-bold-pro.ttf');
-	font-weight: 700;
+	/*font-weight: 700;*/
 }
 
 @font-face {
 	font-family: 'guida';
 	src: url('../font/guida-regular-pro.ttf');
-	font-weight: 400;
+	/*font-weight: 400;*/
 }
 
 /*
@@ -39,6 +39,18 @@ p {
 	padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-feature-settings: "ss01";
+	font-family:guidaBold;
+}
+
 a {
 	color: #30323D;
 }
@@ -59,92 +71,20 @@ img {
 .mobileLogo{
 		display:none;
 	}
+	
+.graph
+{
+	display: block;
+}
+
+.graphMobile{
+	display:none;
+}
 
 /*===============================================
-                P3 Color Support
+                P3 Color Support color: color(display-p3 0 0.8392 0.4784); color: rgb(0, 214, 122);
 ================================================= */
 
-@media (color-gamut: p3) {
-	.underlineLink {
-		text-decoration: underline;
-		color: color(display-p3 0 1 0);
-		cursor:pointer;
-	}
-
-   .navbar-light .navbar-nav .nav-link:hover {
-		color: color(display-p3 0 1 0);
-	}
-	section.hero h1 span {
-	color: color(display-p3 0 1 0);
-	}
-	
-	a.nav-link.custom-btn {
-	color: #F3F8F3;
-	padding: 5px 40px 6px 40px !important;
-	border-radius: 50px;
-	margin: 0 12px 0 14px;
-	font-size: 20px !important;
-	font-weight: 700 !important;
-	background-image: -webkit-linear-gradient(30deg, color(display-p3 0 1 0) 50%, transparent 50%);
-	background-image: linear-gradient(30deg, color(display-p3 0 1 0) 50%, transparent 50%);
-	background-size: 500px;
-	background-repeat: no-repeat;
-	background-position: 0%;
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-ms-transition: 0.3s;
-	-o-transition: 0.3s;
-	border: 3px solid color(display-p3 0 1 0);
-	}
-
-	a.nav-link.custom-btn:hover {
-		background-color: transparent;
-		background-position: 100%;
-		color: color(display-p3 0 1 0);
-	}
-	
-	section.tech h2 span {
-	color: color(display-p3 0 1 0);
-	}
-	
-	section.decent h2 span {
-    color: color(display-p3 0 1 0);
-	}
-	section.working h4 span {
-	color: color(display-p3 0 1 0);
-	}
-
-	section.working a {
-	color: #F3F8F3;
-	padding: 14px 51px 15px 51px;
-	border-radius: 50px;
-	line-height: 0;
-	font-size: 20px;
-	border: 3px solid color(display-p3 0 1 0);
-	transition: 0.3s;
-	font-weight: 700;
-	letter-spacing: 0.5px;
-	background-image: -webkit-linear-gradient(30deg, color(display-p3 0 1 0) 50%, transparent 50%);
-	background-image: linear-gradient(30deg, color(display-p3 0 1 0) 50%, transparent 50%);
-	background-size: 500px;
-	background-repeat: no-repeat;
-	background-position: 0%;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-ms-transition: 0.3s;
-	-o-transition: 0.3s;
-	}
-
-	section.working a:hover {
-		background-color: transparent;
-		background-position: 100%;
-		color: color(display-p3 0 1 0);
-	}
-	section.working button:hover {
-		color: color(display-p3 0 1 0);
-	}
-}
 
 
 /* =========================================
@@ -214,17 +154,23 @@ a.navbar-brand img {
 
 .navbar-light .navbar-nav .nav-link:hover {
 	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 
 a.nav-link.custom-btn {
+	
 	color: #F3F8F3;
 	padding: 5px 40px 6px 40px !important;
 	border-radius: 50px;
 	margin: 0 12px 0 14px;
 	font-size: 20px !important;
 	font-weight: 700 !important;
+	border: 3px solid #00d67a;
+    border: 3px solid color(display-p3 0 0.8392 0.4784);
 	background-image: -webkit-linear-gradient(30deg, #00d67a 50%, transparent 50%);
-	background-image: linear-gradient(30deg, #000d67a 50%, transparent 50%);
+	background-image: linear-gradient(30deg, #00d67a 50%, transparent 50%);
+	background-image: -webkit-linear-gradient(30deg, color(display-p3 0 0.8392 0.4784) 50%, transparent 50%);
+	background-image: linear-gradient(30deg, color(display-p3 0 0.8392 0.4784) 50%, transparent 50%);
 	background-size: 500px;
 	background-repeat: no-repeat;
 	background-position: 0%;
@@ -233,13 +179,13 @@ a.nav-link.custom-btn {
 	-moz-transition: 0.3s;
 	-ms-transition: 0.3s;
 	-o-transition: 0.3s;
-	border: 3px solid #00d67a;
 }
 
 a.nav-link.custom-btn:hover {
 	background-color: transparent;
 	background-position: 100%;
 	color: #00d67a;
+	color:color(display-p3 0 0.8392 0.4784);
 }
 
 .navbar-toggler {
@@ -317,20 +263,21 @@ section.hero {
 section.hero h1 {
 	font-size: 100px;
 	font-weight: 700;
-	line-height: 1;
+	line-height: 0.9;
 	margin: 40px 0 0 -30px;
 }
 
 section.hero h1 span {
 	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 
 section.hero p {
-	font-size: 20px;
+	font-size: 24px;
 	letter-spacing: 0.5px;
 	font-weight: 400;
 	line-height: 1.3;
-	padding: 25px 180px 0 0;
+	padding: 25px 140px 0 0;
 	margin: 0px 0 0 -30px;
 }
 
@@ -340,7 +287,7 @@ section.hero p {
 ======================================= */
 
 section.tech {
-	padding: 100px 0 100px 0;
+	padding: 100px 0 175px 0;
 	text-align: center;
 }
 
@@ -353,6 +300,7 @@ section.tech h2 {
 
 section.tech h2 span {
 	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 
 .img-box img {
@@ -362,9 +310,10 @@ section.tech h2 span {
 
 .img-box h3 {
 	font-weight: 700;
-	padding: 25px 0 0 0;
+	padding: 10px 0 10px 0;
 	font-size: 24px;
-	color: #30323D;
+	color: #00d67a;
+    color: color(display-p3 0 0.8392 0.4784);
 }
 
 .img-box p {
@@ -372,7 +321,7 @@ section.tech h2 span {
 	font-size: 18px;
 	line-height: 1.3;
 	padding: 0 30px;
-	color: #30323D;
+	color: #718b9d;
 	letter-spacing: 0.5px;
 }
 
@@ -385,33 +334,52 @@ section.decent {
     background-position: center;
 	padding: 160px 0;
     background-repeat: no-repeat;
-    background-size: 12%;
+    background-size: 24%;
 }
 section.decent h2 {
     color: #F3F8F3;
-    font-size: 65px;
+    font-size: 70px;
     font-weight: 700;
     letter-spacing: 1px;
 	line-height: 1;
 }
 section.decent h2 span {
     color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 section.decent p {
     color: #F3F8F3;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.2;
-    padding: 10px 0 0 0;
+    line-height: 1.3;
+    padding: 21px 0 0 0;
 }
 
 /*
    Development CSS
 ======================================= */
-
-.dev {
-	padding: 0 0 50px 0;
+.spaceSides
+{
+	padding-left:25px;
 }
+.dev {
+	padding: 0 0 0 0;
+}
+
+.fineprint
+{
+	max-width: 420px;
+    margin-right: auto;
+    margin-left: auto;
+	padding: 50px 15px 0 15px !important;
+}
+
+.spaceImg{
+		padding-top: 65px;
+	}
+	.spaceImgTop{
+		padding-top: 65px;
+	}
 
 .dev-bg1 {
 	background-image: url('../img/live.jpg');
@@ -429,24 +397,25 @@ section.decent p {
 }
 
 .dev-bg1 h3 {
-	font-size: 30px;
+	font-size: 26px;
 	font-weight: 700;
 	color: #30323D;
 }
 
 .dev-bg2 h3 {
-	color: #F3F8F3;
+	color: #30323d;
 }
 
 .dev-bg1 .b-txt {
-	font-size: 80px;
+	font-size: 70px;
 	font-weight: 700;
 	color: #F3F8F3;
 }
 
 .dev-bg1 p {
-	font-size: 20px;
-	padding: 0 7.2em 0 0;
+	font-size: 18px;
+	padding: 11px 7.2em 0 0;
+	line-height: 1.3;
 	color: #30323D;
 }
 
@@ -456,7 +425,13 @@ section.decent p {
 
 .spacer {
 	width: auto;
-	height: 400px;
+	height: 440px;
+}
+
+.spacerText {
+	font-feature-settings: "ss01";
+	letter-spacing:2px;
+	color: #F3F8F3;
 }
 
 .dev-bg1 span {
@@ -499,26 +474,31 @@ section.working {
 section.working h4 {
 	font-weight: 700;
 	font-size: 32px;
-	padding: 0 80px 40px 80px;
+	padding: 0 80px 65px 80px;
 	color: #30323D;
 }
 
 section.working h4 span {
 	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 
 section.working a {
 	color: #F3F8F3;
+	font-feature-settings: "ss01";
 	padding: 14px 51px 15px 51px;
 	border-radius: 50px;
 	line-height: 0;
 	font-size: 20px;
 	border: 3px solid #00d67a;
+	border: 3px solid color(display-p3 0 0.8392 0.4784);
 	transition: 0.3s;
 	font-weight: 700;
 	letter-spacing: 0.5px;
 	background-image: -webkit-linear-gradient(30deg, #00d67a 50%, transparent 50%);
 	background-image: linear-gradient(30deg, #00d67a 50%, transparent 50%);
+	background-image: -webkit-linear-gradient(30deg, color(display-p3 0 0.8392 0.4784) 50%, transparent 50%);
+	background-image: linear-gradient(30deg, color(display-p3 0 0.8392 0.4784) 50%, transparent 50%);
 	background-size: 500px;
 	background-repeat: no-repeat;
 	background-position: 0%;
@@ -532,6 +512,7 @@ section.working a:hover {
 	background-color: transparent;
 	background-position: 100%;
 	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 section.working button {
     border: none;
@@ -542,6 +523,7 @@ section.working button {
 }
 section.working button:hover {
     color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 section.working button:focus {
     outline: none;
@@ -558,6 +540,7 @@ section.working button:focus {
     text-align: center;
     border-radius: 0;
     border: 5px solid #00d67a;
+	border: 5px solid color(display-p3 0 0.8392 0.4784);
     height: 450px;
     display: table-cell;
     vertical-align: middle;
@@ -565,6 +548,7 @@ section.working button:focus {
 }
 .modal-content h2 {
     color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
     font-size: 40px;
     font-weight: 700;
 	line-height: 1;
@@ -582,6 +566,7 @@ section.working button:focus {
 }
 .close {
 	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
     font-size: 65px;
     font-weight: 100;
     border: none !important;
@@ -594,6 +579,7 @@ section.working button:focus {
 }
 .close:hover {
 	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 .popup-form {
     margin: 0 0 0 0 !important;
@@ -654,14 +640,18 @@ form.sign-up-orm input[type="email"] {
 }
 
 form.sign-up-orm a {
+	font-feature-settings: "ss01";
+	white-space: nowrap;
 	color: #F3F8F3;
-	padding: 9px 56px 8px 45px;
+	padding: 14px 51px 15px 51px;
 	border-radius: 50px;
 	line-height: 0;
 	font-size: 20px;
 	font-weight: 700;
 	background-image: -webkit-linear-gradient(30deg, #00d67a 50%, transparent 50%);
 	background-image: linear-gradient(30deg, #00d67a 50%, transparent 50%);
+	background-image: -webkit-linear-gradient(30deg, color(display-p3 0 0.8392 0.4784) 50%, transparent 50%);
+	background-image: linear-gradient(30deg, color(display-p3 0 0.8392 0.4784) 50%, transparent 50%);
 	background-size: 500px;
 	background-repeat: no-repeat;
 	background-position: 0%;
@@ -671,12 +661,14 @@ form.sign-up-orm a {
 	-ms-transition: 0.3s;
 	-o-transition: 0.3s;
 	border: 3px solid #00d67a;
+	border: 3px solid color(display-p3 0 0.8392 0.4784);
 }
 
 form.sign-up-orm a:hover {
 	background-color: transparent;
 	background-position: 100%;
 	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 
 .copy {
@@ -694,13 +686,15 @@ form.sign-up-orm a:hover {
 
 .underlineLink
 {
-	text-decoration: underline;
 	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 	cursor:pointer;
 }
 
 .underlineLink:hover
 {
+	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 	text-decoration: underline;
 	cursor:pointer;
 }
@@ -714,12 +708,14 @@ section.faq h2 {
     font-size: 42px;
     font-weight: 700;
     padding-bottom: 70px;
+	color: #718b9d;
 }
 .faq-cont {
     width: 100%;
 }
 .faq-cont h3 {
     color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
     font-weight: 700;
     font-size: 32px;
     padding-top: 30px;
@@ -729,13 +725,13 @@ section.faq h2 {
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
-    color: #30323D;
+	color: #718b9d;
     padding: 0 20px 0 0;
 	padding-bottom: 40px;
 }
 section.faq hr {
     margin: 0 !important;
-    border-top: 1px solid #A1B4B6;
+    border-top: 1px solid #c6dcde;
     width: 100%;
 }
 
@@ -814,6 +810,7 @@ section.contact {
 .image-box h2 span,
 .image-box2 ul li a:hover {
     color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 .image-box h6 a {
     font-weight: 700;
@@ -823,6 +820,7 @@ section.contact {
 }
 .image-box h6 a:hover {
 	color: #00d67a;
+	color: color(display-p3 0 0.8392 0.4784);
 }
 .image-box2 ul li a {
     color: #fff;
