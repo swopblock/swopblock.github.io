@@ -47,7 +47,7 @@ h5,
 h6 {
 	margin: 0;
 	padding: 0;
-	letter-spacing: 0px;
+	letter-spacing: 0rem !important;
 	font-feature-settings: "ss01";
 	font-family:guidaBold;
 }
