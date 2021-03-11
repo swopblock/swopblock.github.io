@@ -28,6 +28,8 @@
 function ConfirmMessage()
 {
 	var em = document.getElementById("confirmEmail");
-	em.innerHTML = "<h2 style=\"color: white; padding-bottom: 12px;\">Thank you!</h2><div class=\"spaceThank\"></div>";
+	var dc = document.getElementById("displaychange");
+	dc.style.Display = "none";
+	em.innerHTML = "<h2 style=\"color: white; padding-bottom: 12px;\">Thank you!</h2>";
 }
 
