@@ -14,7 +14,7 @@
       <title>Swopblock</title>
 	  <font style="">
    </head>
-   <body style="background-color: #F3F8F3;">
+   <body onload="fitImage();" onresize="fitImage();" style="background-color: #F3F8F3;">
 
       <!-- /*
       Preloader
@@ -121,8 +121,8 @@
                      </div>
                      <div class="col-12">
                          <div class="row">
-							<img style="display:none !important;" class="graph" src="img/graph.jpg" alt="Table Comparison">
-							<img style="display:none !important;" class="graphMobile" src="img/mobileGraph.jpg" alt="Table Comparison">
+							<img id="largeImg" style="display:none !important;" class="graph" src="img/graph.jpg" alt="Table Comparison">
+							<img id="mobileImg" style="display:none !important;" class="graphMobile" src="img/mobileGraph.jpg" alt="Table Comparison">
 						 </div>
 
                         <!--<div class="table-2">

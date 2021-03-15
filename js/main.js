@@ -33,3 +33,19 @@ function ConfirmMessage()
 	em.innerHTML = "<h2 style=\"color: white; padding-bottom: 12px; padding-top:175px;\">Thank you!</h2>";
 }
 
+function fitImage()
+{
+	var img = document.getElementById("largeImg");
+	var mImg = document.getElementById("mobileImg");
+	
+	var wImg = img.offsetWidth;
+	var hImg = wImg * 0.2771;
+	
+	img.offsetHeight = hImg;
+	
+	var wMg = mImg.offsetWidth;
+	var hMg = wImg * 0.881;
+	
+	mImg.offsetHeight = hMg;
+}
+
