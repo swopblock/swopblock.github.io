@@ -42,7 +42,7 @@ function fitImage()
 	var hImg = wImg * 0.2771;
 	
 	console.log(wImg);
-	console.log(hImg + "px !important");
+	console.log(Math.floor(hImg) + "px !important");
 	
 	//img.width = wImg;
 	img.style.height = Math.floor(hImg) + "px !important";
