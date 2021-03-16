@@ -45,12 +45,12 @@ function fitImage()
 	console.log(Math.floor(hImg) + "px !important");
 	
 	//img.width = wImg;
-	img.style.height = Math.floor(hImg) + "px !important";
+	img.style.height = Math.floor(hImg) + "px";
 	
 	var wMg = mImg.offsetWidth;
 	var hMg = wImg * 0.881;
 	
-	mImg.style.height = Math.floor(hMg) + "px !important";
+	mImg.style.height = Math.floor(hMg) + "px";
 	//img.width = wMg;
 }
 
