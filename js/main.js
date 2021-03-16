@@ -48,7 +48,7 @@ function fitImage()
 	img.style.height = Math.floor(hImg) + "px";
 	
 	var wMg = mImg.offsetWidth;
-	var hMg = wImg * 0.881;
+	var hMg = wMg * 0.881;
 	
 	mImg.style.height = Math.floor(hMg) + "px";
 	//img.width = wMg;
