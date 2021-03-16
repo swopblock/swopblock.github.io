@@ -41,6 +41,7 @@ function fitImage()
 	var wImg = img.offsetWidth;
 	var hImg = wImg * 0.2771;
 	
+	console.log(wImg);
 	img.width = wImg;
 	img.height = hImg;
 	
