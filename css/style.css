@@ -97,6 +97,11 @@ img {
 	display:none;
 }
 
+.decText
+{
+	margin-top:-25px;
+}
+
 /*===============================================
                 P3 Color Support color: color(display-p3 0 0.8392 0.4784); color: rgb(0, 214, 122);
 ================================================= */
@@ -351,7 +356,7 @@ section.decent {
     background-position: center;
 	padding: 160px 0;
     background-repeat: no-repeat;
-    background-size: 130%;
+    background-size: 100%;
 }
 section.decent h2 {
     color: #F3F8F3;
