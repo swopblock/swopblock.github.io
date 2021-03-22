@@ -90,7 +90,7 @@
 			margin-left: auto;
 	}
 	section.decent {
-    background-size: 85%;
+    background-size: 130%;
 	}
 	.spacerText {
     font-feature-settings: "ss01";
@@ -193,7 +193,7 @@
 		font-size: 22px;
 	}
 	section.decent {
-		background-size: 36%;
+		background-size: 130%;
 	}
 
 
@@ -437,7 +437,7 @@
 		font-size: 18px;
 	}
 	section.decent {
-		background-size: 36%;
+		background-size: 130%;
 	}
 	table {
 		margin: 35px auto 35px auto;
@@ -658,7 +658,7 @@
 		font-size: 18px;
 	}
 	section.decent {
-		background-size: 48%;
+		background-size: 130%;
 		padding: 120px 10px;
 	}
 	section.working p {
@@ -812,7 +812,7 @@
 		font-size: 16px;
 	}
 	section.decent {
-		background-size: 85%;
+		background-size: 130%;
 	}
 	section.working p {
 		font-size: 15px;
