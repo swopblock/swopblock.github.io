@@ -13,6 +13,13 @@
 	}
 }
 @media (max-width:1366px) {
+	
+		section.decent {
+		background: url(../img/mobile-bg-01.jpg) repeat #30323d;
+		background-position:center;
+		background-size: 100%;
+		padding: 120px 10px;
+	}
 	.dev-bg1 {
 		height: 650px;
 		padding: 40px 0 40px 40px;
