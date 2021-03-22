@@ -659,7 +659,8 @@
 	}
 	section.decent {
 		background: url(../img/mobile-bg-01.jpg) repeat #30323d;
-		background-size: 130%;
+		background-position:center;
+		background-size: 115%;
 		padding: 120px 10px;
 	}
 	section.working p {
