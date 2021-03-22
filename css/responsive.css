@@ -658,6 +658,7 @@
 		font-size: 18px;
 	}
 	section.decent {
+		background: url(../img/mobile-bg-01.jpg) repeat #30323d;
 		background-size: 130%;
 		padding: 120px 10px;
 	}
