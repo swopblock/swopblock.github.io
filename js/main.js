@@ -6,7 +6,7 @@
     $('#preloader').delay(350).fadeOut('slow');
  });
  
- function PostMessage(id)
+function PostMessage(id)
 {
     var em = document.getElementById(id).value;
 	
@@ -30,7 +30,7 @@ function ConfirmMessage()
 	var em = document.getElementById("confirmEmail");
 	var dc = document.getElementById("displaychange");
 	dc.style.display = "block";
-	em.innerHTML = "<h2 style=\"color: white; padding-bottom: 12px; padding-top:175px;\">Thank you!</h2>";
+	em.innerHTML = "<img src=\"..\img\thumbs-up.jpg\"><h2 style=\"color: white; padding-bottom: 12px; padding-top:175px;\">Confirmation<br>on it's way!</h2>";
 }
 
 function fitImage()
