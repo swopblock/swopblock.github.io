@@ -599,6 +599,7 @@ section.working button:focus {
 	position: absolute;
     right: 10px;
     top: 5px;
+	z-index:1000;
 }
 .close:hover {
 	color: #00d67a;
