@@ -476,7 +476,7 @@
 	}
 	.rideBot{
 		position:relative;
-		top: -90px;
+		top: -170px;
 	}
 	
 	.rideTop
@@ -636,7 +636,7 @@
 		font-size: 25px;
 	}
 	.footer {
-		padding: 80px 25px 90px 25px;
+		padding: 80px 25px 135px 25px;
 		text-align: center;
 	}
 	form.sign-up-orm a {
