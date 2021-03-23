@@ -13,17 +13,6 @@
 	}
 }
 @media (max-width:1366px) {
-	
-	section.hero {
-	background-image: url('../img/header-bg-single.jpg');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 103vh;
-	color: #F3F8F3;
-	display: flex;
-	align-items: center;
-}
 
 		section.decent {
 		background: url(../img/header-bg-middle.jpg) repeat #30323d;
@@ -286,6 +275,17 @@
 	
 }
 @media (max-width:1023px) {
+		section.hero {
+	background-image: url('../img/header-bg-single.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 103vh;
+	color: #F3F8F3;
+	display: flex;
+	align-items: center;
+}
+
 	a.nav-link.custom-btn {
 		font-size:40px !important;
 		padding: 14px 51px 15px 51px !important;
@@ -334,7 +334,7 @@
 		background-position: 20% 100%;
 	}
 	section.hero h1 {
-		font-size: 72px;
+		font-size: 53px;
 	}
 	.dev-bg1 h2 {
 		font-size: 65px;
