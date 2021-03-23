@@ -30,7 +30,7 @@ function ConfirmMessage()
 	var em = document.getElementById("confirmEmail");
 	var dc = document.getElementById("displaychange");
 	dc.style.display = "block";
-	em.innerHTML = "<img src=\"..\img\thumbs-up.jpg\"><h2 style=\"color: white; padding-bottom: 12px; padding-top:175px;\">Confirmation<br>on it's way!</h2>";
+	em.innerHTML = "<img style=\"width: 50%;margin-left: auto;margin-right: auto;padding-top: 15px;\" src=\".\\img\\thumbs-up.jpg\"><h2 style=\"color: white; padding-bottom: 12px; padding-top:25px;\">Confirmation<br>on it's way!</h2>";
 }
 
 function fitImage()
