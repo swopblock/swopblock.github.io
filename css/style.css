@@ -137,7 +137,15 @@ img {
 /*
   CUSTOM PAGE CSS
 ======================================= */
+.mainBackground
+{
+	display:block;
+}
 
+.mobileBackground
+{
+	display:none;
+}
 
 /*
    NAVBAR CSS
