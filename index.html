@@ -1,282 +1,313 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="Swopblock powers secure decentralized trading between all cryptos in realtime.">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/responsive.css">
-      <link rel="shortcut icon" href="img/favicon.ico">
-      <title>Swopblock</title>
-   </head>
-   <body style="background-color:#ffffff; /*#30323f;*/ background-image:url('img/TempSite.jpg');    background-size: cover;
-    background-repeat: no-repeat; width:100%;">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Swopblock" content="Crypto’s first automated trading network powered by 100% distributed liquidity.">
+		<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+		<meta name="theme-color" content="#00e100" media="(prefers-color-scheme: dark)">
+		<title>Swopblock</title>
+		<link rel="stylesheet" href="css/Normalize.css">
+		<link rel="stylesheet" href="css/Style.css">
+		<link href="css/hamburgers.css" rel="stylesheet">
+		<link rel="shortcut icon" href="img/favicon.ico">
+	</head>
 	
-	<img class="mainBackground" src="img/TempSite.jpg" />
+	<body class="homeBack">
+	<div class="fullWidth greenTop"></div>
+	<div class="fullWidth">
+		<div class="navTop">
+			<a href="index.html"><div class="logoTop"></div></a>
+			<div class="navBar">
+				<div class="navLink">
+					<a href="mission.html">MISSION</a>
+				</div>
+				<div class="navLink">
+					<a href="technology.html">TECHNOLOGY</a>
+				</div>
+				<div class="navLink">
+					<a href="">PAPER</a>
+				</div>
+				<div class="navLink">
+					<a href="https://www.github.com/Swopblock/swop">GITHUB</a>
+				</div>
+				<div class="navLink">
+					<a href="contact.html">
+					CONTACT
+					</a>
+				</div>
+				<div class="navLink navBorder"><a href="https://wefunder.com/Swopblock">INVEST</a>
+				</div>
+				<a target="_blank" href="https://www.twitter.com/Swopblock">
+					<div class="navLink navTwitter"></div>
+				</a>
+			</div>
+		</div>
+		<div class="mobilenav">
+        
+            <input id="collapsible" class="toggle" type="checkbox">
+            <label for="collapsible" class="hamburger">
+               
+                <div class="hamburger--squeeze" id="testing">
+				<a href="index.html"><div class="logoTop"></div></a>
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner">
+					   
+					  </div>
+                    </div>
+                </div>
+            
+            </label>
+		  <div class="menu textbold">
+                <a href="mission.html"><span id="mobileabout">MISSION</span></a>
+                <a href="technology.html"><span id="mobileprojects">TECHNOLOGY</span></a>
+                <a target="_blank" href="SwopblockPaper.pdf"><span id="mobileprojects">PAPER</span></a>
+				<a href="contact.html"><span id="mobileprojects">CONTACT</span></a>
+				<a target="_blank" href="https://www.github.com/Swopblock/swop"><span id="mobileprojects">GITHUB</span></a>
+				<a target="_blank" href="https://wefunder.com/Swopblock"><span class="pink" style="color: #FF18B9;" id="mobileprojects">INVEST</span></a>
+				<a target="_blank" href="https://www.twitter.com/Swopblock">
+					<div class="navLink navTwitter"></div>
+				</a>
+				<span id="menupaddingbottom"></span>
+            </div>    
+    </div>
+	</div>
 	
-	<img class="mobileBackground" src="img/mobileTempSite.jpg" />
-
-      <!-- /*
-      Preloader
-      ============================== */ -->
-      <div id="preloader">
-         <div id="status">&nbsp;</div>
-      </div>
-	  
-	  <!-- REMEMBER TO UN-COMMENT SCRIPTS WHEN THE SITE IS NO LONGER TempSite.jpg  -->
-	  
-	  <!-- REMEMBER TO UN-COMMENT SCRIPTS WHEN THE SITE IS NO LONGER TempSite.jpg  -->
-	  
-	  <!-- REMEMBER TO UN-COMMENT SCRIPTS WHEN THE SITE IS NO LONGER TempSite.jpg  -->
-	  
-	  <!-- REMEMBER TO UN-COMMENT SCRIPTS WHEN THE SITE IS NO LONGER TempSite.jpg  -->
-	  
-	<!-- <script>
-	  if (location.protocol !== 'https:') {
-    location.replace(`https:${location.href.substring(location.protocol.length)}`);
-}
-	  </script>-->
-
-      <main style="display:none;">
-         <!-- /*
-         NAVBAR
-         ============================== */ -->
-         <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="background-color: transparent !important; margin-bottom: -100px;">
-            <div class="container-fluid p-0">
-               <a class="navbar-brand" href="index.html" aria-label="homepage"><img src="img/logo.jpg" alt="Logo"></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav my-nav-link">
-                     <li class="nav-item">
-                        <a class="nav-link" target="_blank"  href="https://github.com/swopblock/swopblock" aria-label="links">GitHub</a>
-                        <!-- <span class="sr-only">(current)</span> -->
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" target="_blank" href="./pdf/SwopblockWhitepaper.pdf" aria-label="links">WhitePaper</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html" aria-label="links">Contact</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="faq.html" aria-label="links">FAQ</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://wefunder.com/swopblock" aria-label="links">INVEST</a>
-                     </li>
-			  <!-- 
-                     <li class="nav-item">
-                        <button type="button" data-target="#exampleModal" data-toggle="modal"><a class="nav-link custom-btn" aria-label="links">INVEST</a></button>
-                        <!-- <a class="nav-link custom-btn" href="…" aria-label="links">INVEST</a> 
-                     </li>
-		       -->
-                     <li class="nav-item">
-                        <a class="nav-link icon" target="_blank" href="https://twitter.com/swopblock" aria-label="links"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
-
-         <!-- /*
-         Header
-         ============================== */ -->
-         <section class="hero">
-            <div class="container">
-               <div class="row">
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 rideTop"> <img class="mobileLogo" src="img/Swop.jpg" alt="Image"></div>
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 rideBot">
-                     <h1>Crypto’s first<br><span>autonomous</span><br>trading network</h1>
-                     <p>Swopblock powers secure decentralized trading between all cryptos in realtime.</p>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!-- /*
-         Technology
-         ============================== */ -->
-         <section class="tech" style="background-color: #F3F8F3;">
-            <div class="container">
-               <div class="row">
-                  <div class="col-12">
-                     <h2 style="color: #718b9d;"><span>Swopblock harnesses blockchain technology to</span><br>coordinate a collection of lil' autonomous agents who securely execute your cross-blockchain trades.</h2>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                     <div class="img-box">
-                        <img src="img/tech1.jpg" alt="Image">
-                        <h3>Realtime trades</h3>
-                        <p class="responsive-txt">Trades are autonomous and<br>react in realtime to continuous<br>crypto market fluctuations.</p>
-                        <!-- <p class="responsive-txt2">Trades are autonomous and react in realtime to continuous crypto market fluctuations.</p> -->
-                     </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                     <div class="img-box">
-                        <img src="img/tech2.jpg" alt="Image">
-                        <h3>Proven security</h3>
-                        <p class="responsive-txt">Cryptos’ built-in securities<br>are leveraged so traders never<br>lose control of their value.</p>
-                        <!-- <p class="responsive-txt2">Cryptos’ built-in securities are leveraged so traders never lose control of their value.</p> -->
-                     </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                     <div class="img-box">
-                        <img src="img/tech3.jpg" alt="Image">
-                        <h3>Universal access</h3>
-                        <p class="responsive-txt">Any blockchain can join the<br>Swopblock Network and further<br>end crypto exchange theft.</p>
-                        <!-- <p class="responsive-txt2">Any blockchain can join the Swopblock network and further end cryptocurrency exchange theft.</p> -->
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!-- /*
-         DECENTRALIZED
-         ============================== */ -->
-         <section class="decent">
-            <div class="container decText">
-               <div class="row">
-                  <div class="col-12 text-center">
-                     <h2><span>A decentralized</span><br>network of networks</h2>
-                     <div class="centerDiv">
-					 <p class="responsive-txt">The Swopblock Network creates a super-network of crypto-networks<br>enabling autonomous trading between previously isolated crypto markets.<br>Say goodbye to the middle-man, and say goodbye to listing fees.</p>
-					 </div>
-                     <!-- <p class="responsive-txt2">The Swopblock Network creates a super-network of crypto-networks enabling autonomous trading between previously isolated crypto markets. Say goodbye to the middle-man, and say goodbye to listing fees.</p> -->
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!-- /*
-         Development
-         ============================== */ -->
-         <section class="dev" style="background-color: #F3F8F3;">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0">
-                     <div class="dev-bg1">
-                        <h3>IN DEVELOPMENT</h3>
-                        <h3 class="b-txt">Swopblock LIVE</h3>
-                        <p class="responsive-txt3" style="color: #F3F8F3;">Swopblock LIVE will compare trade values of leading<br>cryptocurrencies and demonstrate Swopblock’s realtime<br>reaction to continuous crypto-market fluctuations.</p>
-                        <p class="responsive-txt2" style="color: #F3F8F3;">Swopblock LIVE will compare trade values of leading cryptocurrencies and demonstrate Swopblock’s realtime reaction to continuous crypto-market fluctuations.</p>
-                        <div class="spacer"></div>
-                        
-                     </div>
-                  </div>
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-0">
-                     <div class="dev-bg1 dev-bg2">
-                        <h3>WHAT'S NEXT</h3>
-                        <h3 class="b-txt" style="color: #F3F8F3;">Swopblock APP</h3>
-                        <p class="responsive-txt3">The Swopblock APP will autonomously execute secure<br>realtime trades between BTC and ETH, and eventually<br>bring all cryptos onto the Swopblock Network.</p>
-                        <p class="responsive-txt2">The Swopblock APP will autonomously execute secure realtime trades between BTC and ETH, and eventually bring all cryptos onto the Swopblock Network.</p>
-                        <div class="spacer"></div>
-                        
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!-- /*
-         Working
-         ============================== */ -->
-         <section class="working" style="background-color: #F3F8F3;">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 spaceImgTop">
-                     <div class="main-img">
-                        <img src="img/launch.jpg" alt="image">
-                     </div>
-                             <h4 style="color: #718b9d; font-feature-settings: normal; letter-spacing: -0.01rem;"><span>Join our development team.</span><br> Help launch BTC, ETH, and more<br>onto the Swopblock Network.</h4>
-                     <a href="https://github.com/swopblock">JOIN US</a>
-                  </div>
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 spaceImg">
-                     <div class="main-img">
-                        <img src="img/seed.jpg" alt="image" style="width: 90%;">
-                     </div>
-                     <h4 style="color: #718b9d; font-feature-settings: normal; letter-spacing: -0.01rem;"><span>Invest in Swopblock.</span>
-			     <!-- <br>Bonus 36 SWBL for every $1 invested. -->
-			     <br>WeFunder.com crowd<br>funding now open.</h4>
-			  <!--
-                     <button type="button" data-target="#exampleModal" data-toggle="modal"><a aria-label="button-links">INVEST</a></button>
-                     <p class="fineprint">*Swopblock has a private issue capital<br>base that is signified by the symbol SWBL.</p>
-			-->
-			<a href="https://wefunder.com/swopblock">INVEST</a>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Modal -->
-         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog spaceThank">
-               <div class="modal-content" id="displaychange">
-                  <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                     </button>
-                  </div>
-                  <div class="modal-body"  id="confirmEmail">
-                     <h2>PHASE TWO OPENS<br> <span>APRIL 22</span></h2>
-                     <form id="invest" class="sign-up-orm popup-form" onsubmit="PostMessage();return false;">
-                        <label style="font-family:guidaBold;" for="receive" name="receive">GET REMINDERS & INFO<br> FOR PRE-SEED INVESTING.</label>
-                        <input id="receive" type="email" placeholder="your email">
-                        <a onclick="PostMessage('receive');" style="cursor:pointer;" aria-label="button-links">SIGN UP</a>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <!-- /*
-         Footer
-         ============================== */ -->
-         <footer class="footer">
-            <div class="container-fluid">
-               <div class="row align-items-center">
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                     <img src="img/footer-logo.jpg" alt="Footer-logo">
-                  </div>
-                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                     <form class="sign-up-orm" action="">
-                        <label style="font-family: 'guidaBold'; font-feature-settings: 'ss01';" for="news" name="newsletter">SIGN UP FOR THE LATEST NEWS.<br>GET INVESTOR INFO & MORE.</label>
-                        <input id="news" type="email" placeholder="your email">
-                        <a data-target="#exampleModal" data-toggle="modal" onclick="PostMessage('news');" style="cursor:pointer;" aria-label="button-links">SIGN UP</a>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </footer>
-         <div class="col-12 copy">
-            <div class="container">
-               <p align="center"  style="font-family: 'guidaBold'; font-feature-settings: 'ss01';">© 2O22 Swopblock</p>
-            </div>
-         </div>
-      </main>
-
-      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-      <script src="js/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/main.js"></script>
-	  
-	  <!-- REMEMBER TO UN-COMMENT SCRIPTS WHEN THE SITE IS NO LONGER TempSite.jpg  -->
-	  
-	  <!-- REMEMBER TO UN-COMMENT SCRIPTS WHEN THE SITE IS NO LONGER TempSite.jpg  -->
-	  
-	  <!-- REMEMBER TO UN-COMMENT SCRIPTS WHEN THE SITE IS NO LONGER TempSite.jpg  -->
-	  
-	  <!-- REMEMBER TO UN-COMMENT SCRIPTS WHEN THE SITE IS NO LONGER TempSite.jpg  -->
-	  
-	  <!--
-	  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2c41c6aff157499178b84b6de/bad75c68ae7f50b58b5536c1f.js");</script>
-	  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-	  <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-   --></body>
+	<div class="mainDesktop">
+	
+	<div class="fullWidth floatDude">
+		<div class="visualDiv">
+			<div class="visualFloatStream">
+				<div class="leftFloatDiv">
+					<div class="leftFloatTitle">
+					<span class="green">FLOAT UP THE</span><br>
+					<span class="pink">LIQUIDITY STREAM.</span>
+					</div>
+					<div class="leftFloatText green">
+					Crypto’s first automated trading network<br>powered by 100% distributed liquidity.
+					</div>
+					<div style="margin-top:4vw;">
+						<span class="leftFloatButton">WATCH VIDEO</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="fullWidth">
+		<div class="visualDiv">
+			<div class="handshakeCenter">
+				<div class="handshakeDiv">
+					<div class="handshakeTitle">
+					<span class="blue">Your keys. Your crypto. </span><span class="pink">Your trade.</span><br>
+					</div>
+					<div class="handshakeText blue">
+					Unlike the central exchanges and decentralized liquidity pools, Swopblock’s Liquidity<br>Stream never takes control of your crypto assets even while trading.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fullWidth">
+		<div class="visualDiv">
+			<div class="poolsLeft">
+				<div class="poolsDiv">
+					<div class="poolsTitle">
+					<span class="blue">Beware of the<br></span><span class="pink">Liquidity Pools.</span><br>
+					</div>
+					<div class="poolsText blue">
+					Liquidity Pools distribute tokens only, piling up the actual cash under the custody of the pool owners, making them incredibly vulnerable and tempting targets for attackers.
+					<br><br>Swopblock’s Liquidity Stream respects each user’s custody of their own cash, while honoring it’s liquidity needed to power the Swopblock Network.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fullWidth">
+		<div class="visualDiv">
+			<div class="joinRight">
+				<div class="joinDiv">
+					<div class="joinTitle">
+					<span class="blue">
+					Any blockchain can join
+					</span>
+					<span class="pink">
+					our Liquidity Stream.
+					</span>
+					<br>
+					</div>
+					<div class="joinText blue">
+					The Swopblock Network is powered by SWOBL (Swopblock’s crypto), which acts as a liquidity adaptor for blockchains such as ETH, BTC, and more - meaning Swopblock’s Liquidity Stream is 100% distributed to SWOBL owners.
+					</div>
+					<div style="margin-top:4vw;">
+						<span class="leftButton">LEARN MORE</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="mainMobile">
+		<div class="MobileFloatCont">
+			<div class="MobileFloatTitle">
+			<span class="green textbold">FLOAT UP THE</span><br>
+			<span class="pink textbold">LIQUIDITY STREAM.</span></div>
+			<div class="MobileFloatText text green">
+			The future of crypto trading is<br>
+			powered by 100% distributed liquidity.
+			</div>
+			<div class="buttonSpec arrowButton" style="border-color: #00e100; color: #00e100; float: left;">
+				<div class="buttonSpace">
+					WATCH VIDEO<span class="doubleForward">&#x00BB;</span>
+				</div>
+			</div>
+		</div>
+		<div style="height:44vw;"></div>
+		<div class="MobileHandshakeCont">
+		<div class="MobileFloatTitle">
+			<div style="text-align:center;">
+			<span class="blue textbold">Your keys.</span><br>
+			<span class="blue textbold">Your crypto.</span><br>
+			<div style="height:44vw;"></div>
+			<span class="pink textbold">Your trade.</span><br>
+			<div style="height:4vw;"></div>
+			<span class="blue text">
+			<div style="width:80%; margin:auto;" class="MobileFloatText">
+			Unlike central exchanges and
+			decentralized liquidity pools,
+			Swopblock’s Liquidity Stream never
+			takes control of your crypto assets.
+			</div>			
+			</span>
+			</div>
+			</div>
+		</div>
+		<div style="height:103vw;"></div>
+		<div class="MobileHandshakeCont">
+		<div class="MobileFloatTitle">
+			<div style="text-align:left; margin-left:8vw;">
+			<span class="blue textbold">Beware of the</span><br>
+			<span class="pink textbold">Liquidity Pools.</span><br>
+			<div style="height:4vw;"></div>
+			<span class="blue text">
+			<div style="width:80%;  text-align:left;" class="MobileFloatText">
+			Liquidity Pools distribute tokens only, piling up the
+			actual cash under the custody of the pool owners,
+			making them incredibly vulnerable and tempting
+			targets for attackers - similar to central exchanges.
+			<div style="height:4vw;"></div>
+			Swopblock’s Liquidity Stream respects each user’s
+			custody of their own cash, while honoring it’s
+			liquidity needed to power the Swopblock Network.
+			</div>			
+			</span>
+			</div>
+			</div>
+		</div>
+		
+		<div style="height:130vw;"></div>
+		<div class="MobileHandshakeCont">
+		<div class="MobileFloatTitle">
+			<div style="text-align:left;">
+			<span class="blue textbold">Any blockchain can join</span><br>
+			<span class="pink textbold">our Liquidity Stream</span><br>
+			<div style="height:4vw;"></div>
+			<span class="blue text">
+			<div style="width:80%; margin:auto; text-align:left;" class="MobileFloatText">
+			The Swopblock Network is powered by SWOBL
+			(Swopblock’s crypto), which acts as a liquidity
+			adaptor for blockchains such as ETH, BTC, and more
+			- meaning Swopblock’s Liquidity Stream is 100%
+			distributed to SWOBL owners.
+			<div style="height:4vw;"></div>
+			</div>			
+			</span>
+			<div class="buttonSpec arrowButton" style="">
+				<div class="buttonSpace">
+					WATCH VIDEO<span class="doubleForward">&#x00BB;</span>
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+		<div class="fullWidth greenBlock">
+		<div class="greenLeft">
+			<div class="handshakeTitle">
+				<div style="text-align:center; margin-top:8vw;">
+					<span class="blue">Invest at Wefunder.</span><br>
+					<span class="white">Get SWOBL.</span><br>
+					<img src="img/FooterImageLeft.png" class="imgGreen" />
+					
+					<div class="handshakeText blue">
+					SWOBL powers Swopblock’s
+					exchange protocol. Invest now
+					and receive SWOBL as a Perk.
+					</div>
+					<div class="buttonSpec arrowButton">
+					<div class="buttonSpace">
+						WEFUNDER<span class="doubleForward">&#x00BB;</span>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="greenRight">
+			<div class="handshakeTitle">
+				<div style="text-align:center; margin-top:8vw;">
+					<span class="blue">Develop at Github.</span><br>
+					<span class="white">Download the Demo.</span><br>
+					<img src="img/FooterImageRight.png" class="imgGreen" />
+					
+					<div class="handshakeText blue">
+					Join the team and further
+					the mission of Swopblock’s open<br>
+					source exchange protocol.
+					</div>
+					<div class="buttonSpec arrowButton">
+					<div class="buttonSpace">
+						GITHUB<span class="doubleForward">&#x00BB;</span>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fullWidth">
+		<div class="handshakeTitle">
+			<div class="signUpDiv">
+				<span class="blue">Never miss an update!</span><br>
+				<div style="height:2vw;"></div>
+				<input type="text" id="EmailSignUp" placeholder="EMAIL ADDRESS">
+				<div class="buttonSpec regButton">
+					<div class="buttonSpace">
+						SIGN UP
+					</div>
+				</div>
+			</div>
+			
+			<div style="height:4vw;"></div>
+			<div id="CopyrightBox">
+				© 2O<span id="year">22</span> Swopblock
+			</div>
+						
+		</div>
+	</div>
+	<script>
+	window.onload= function(){
+			// Look for .hamburger
+			var click = document.getElementById('testing');
+			
+			console.log(click);
+			// On click
+			click.addEventListener("click", function() {
+			// Toggle class "is-active"
+			click.classList.toggle("is-active");
+			// Do something else, like open/close menu
+			});  
+        }
+	</script>
+	
+	</body>
 </html>
