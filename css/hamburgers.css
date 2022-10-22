@@ -1,0 +1,608 @@
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #00e100;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 48%;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 6.5vw;
+  height: 0.8vw;
+  background-color: #00e100;
+  border-radius: 0vw;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -2.2vw;
+}
+.hamburger-inner::after {
+  bottom: -2.2vw;
+}
+
+/*
+     * Squeeze
+     */
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+.hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.075s 0.12s ease,
+    transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--squeeze.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+.hamburger--squeeze.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.075s ease,
+    transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger-box {
+  background-color: #ffffff;
+  position: fixed;
+  top: 5vw;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 18vw;
+  width: 20vw;
+  cursor: pointer;
+  padding-left: 4.5vw;
+  z-index:200;
+}
+
+.mobilenav{
+	display:none;
+	
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  letter-spacing: 0.04vw;
+  font-size: 1.1vw;
+  color: #aa733f;
+  width: 45vw;
+  height: 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 3.5vw;
+  align-items: center;
+  align-content: center;
+}
+
+.navbuttons {
+  width: 45vw;
+  height: 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 0.8vw;
+}
+.navbutton {
+  letter-spacing: 0.05vw;
+  font-size: 1.2vw;
+  color: #aa733f;
+  margin-right: 2.7vw;
+}
+
+@media screen and (min-width: 600px) {
+	.mobilenav{
+	display:none;
+}
+}
+
+@media screen and (max-width: 600px) {
+	.mobilenav{
+	display:block;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+	top: 0px;
+    border-top: 4.4vw solid #00e100;
+}
+}
+
+
+#logounderline {
+  display: none;
+}
+.navbutton {
+  display: none;
+}
+nav {
+  display: none;
+}
+
+#mobilenav {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  background-color: #ffffff;
+  display: block;
+  
+}
+#mobilelogo {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 20vw;
+  background-color: #ffffff;
+  font-family: "MonumentExtended-bold";
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 20vw;
+  width: 80vw;
+  letter-spacing: 0.2vw;
+  font-size: 3.4vw;
+  color: #00e100;
+  margin-left: 0vw;
+  padding-right: 4.5vw;
+  cursor: pointer;
+}
+.hamburger {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 20vw;
+  margin-top: -1vw;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: #ffffff;
+  width: 100vw;
+  max-height: 0vw;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left:16vw;
+}
+.toggle:checked + .hamburger + .menu {
+  max-height: 305vw;
+}
+input[type="checkbox"] {
+  display: none;
+}
+#mobilefox {
+  background: url("../images/whitefox-01.svg") no-repeat;
+  width: 20vw;
+  height: 20vw;
+  display: inline-block;
+}
+.navarrow {
+  width: 16vw;
+  padding-right: 5vw;
+}
+#mobileabout {
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 0.2vw;
+  font-size: 6vw;
+  color: #00e100;
+  margin-top: 8vw;
+  width: 65vw;
+  height: 18vw;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+#mobileprojects {
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 0.2vw;
+  font-size: 6vw;
+  color: #00e100;
+  width: 65vw;
+  height: 18vw;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+#mobilegram {
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 0.2vw;
+  font-size: 6vw;
+  color: #00e100;
+  width: 65vw;
+  height: 18vw;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+#menupaddingbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 65vw;
+  height: 72vw;
+}
+#foxnav {
+  width: 100vw;
+  height: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#foxlogo {
+  width: 20vw;
+  height: 20vw;
+  margin-top: 0.6vw;
+  background: url("../images/whitefox-01.svg") no-repeat;
+  display: inline-block;
+}
+#maincontent {
+  width: 100vw;
+  height: 155vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 45vw;
+}
+#headline {
+  text-align: center;
+}
+
+header {
+}
+
+/* PAGE 2 ================================ MOBILE - FOX PAGE =============================== */
+
+#foxbackground {
+  background: url("../images/brownfox.jpg");
+  background-size: 340vw;
+  background-position: -120vw -18vw;
+  position: absolute;
+  z-index: -2;
+  top: 20vw;
+  left: 0px;
+}
+#foxcontent {
+  width: 100vw;
+  height: 175vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 45vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+#quote {
+  font-family: "NeueWorld-CondensedRegular";
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.05vw;
+  font-size: 10vw;
+  color: #00e100;
+  margin: 0;
+}
+/* PAGE 3 ================================ MOBILE - ABOUT PAGE =============================== */
+
+#aboutbackground {
+  background-color: #00e100;
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: -2;
+  top: 20vw;
+  left: 0px;
+}
+#abouttext {
+  background-color: #00e100;
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  padding-bottom: 20vw;
+}
+#foxnavbrown {
+  background-color: #00e100;
+  width: 100vw;
+  height: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#foxlogobrown {
+  width: 20vw;
+  height: 20vw;
+  background: url("../images/fox.svg") no-repeat;
+  display: inline-block;
+  margin-top: 0.6vw;
+}
+#foxcolor {
+  filter: aqua;
+}
+.twoup {
+  background-color: #00e100;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: -2;
+  top: 140vw;
+  left: 0px;
+}
+#jeremy {
+  background: url("../images/jeremy.jpg");
+  background-size: 110vw;
+  background-position: 0vw -6vw;
+  width: 96vw;
+  height: 158vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top;
+  align-content: center;
+  padding-left: 15vw;
+  padding-right: 22vw;
+  padding-top: 15vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+}
+#austin {
+  background: url("../images/austin.jpg");
+  background-size: 109.5vw;
+  background-position: -5vw -5.5vw;
+  width: 96vw;
+  height: 158vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top;
+  align-content: center;
+  padding-left: 15vw;
+  padding-right: 30vw;
+  padding-top: 15vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+}
+
+.partner {
+  margin-top: 78vw;
+  margin-bottom: 1vw;
+}
+#contact {
+  font-family: "MonumentExtended-regular";
+  font-weight: normal;
+  letter-spacing: 0.5vw;
+  font-size: 3.4vw;
+  color: #00e100;
+  margin-left: 7vw;
+}
+.contact {
+  background-color: black;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0vw;
+  margin-top: 2vw;
+}
+.contact:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0vw;
+  margin-top: 2vw;
+}
+.contact:active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0vw;
+  margin-top: 2vw;
+}
+.contactarrow {
+  display: inline-block;
+  width: 10vw;
+  margin-right: 6vw;
+}
+
+/* PAGE 4 ================================ MOBILE - PROJECT PAGE =============================== */
+
+#projectsbackground {
+  background-color: #00e100;
+  position: absolute;
+  z-index: -2;
+  top: 20vw;
+  left: 0px;
+}
+#foxrunresidence {
+  background: url("../images/m-foxrun-06.jpg");
+  background-size: cover;
+  width: 96vw;
+  height: 165vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top;
+  align-content: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 12vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  text-align: center;
+}
+.oneup {
+  background-color: #00e100;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: -2;
+  top: 40vw;
+  left: 0px;
+}
+#aperture {
+  font-family: "MonumentExtended-regular";
+  font-weight: normal;
+  letter-spacing: 0.5vw;
+  font-size: 3.4vw;
+  color: #00e100;
+  margin-left: 7vw;
+}
+.aperture {
+  background-color: black;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  text-align: left;
+  margin: 0vw;
+  margin-top: 82vw;
+}
+.aperture:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0vw;
+  margin-top: 82vw;
+}
+.aperture:active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 0.6vw;
+  width: 65vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  margin: 0vw;
+  margin-top: 82vw;
+}
+
+#residence {
+  color: black;
+  margin-bottom: 2vw;
+}
+#coming {
+  margin-top: 4vw;
+}
+
+/* ================================================================================ */
+/* ================================ MOBILE - ACTIVE NAV =============================== */

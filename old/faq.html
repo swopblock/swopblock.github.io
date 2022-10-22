@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Secure peer-to-peer realtime trading between all cryptocurrencies is now possible.">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="shortcut icon" href="img/favicon.ico">
+      <title>Swopblock</title>
+	  <font style="">
+   </head>
+   <body onload="fitImage();" onresize="fitImage();" style="background-color: #F3F8F3;">
+
+      <!-- /*
+      Preloader
+      ============================== */ -->
+      <div id="preloader">
+         <div id="status">&nbsp;</div>
+      </div>
+ <script>
+	  if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
+	  </script>
+      <main>
+         <!-- /*
+         NAVBAR
+         ============================== */ -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container-fluid p-0">
+               <a class="navbar-brand" href="index.html" aria-label="homepage"><img src="img/logo.jpg" alt="Logo"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav my-nav-link">
+                     <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://github.com/swopblock/swopblock" aria-label="links">GitHub</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="./pdf/SwopblockWhitepaper.pdf" aria-label="links">WhitePaper</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html" aria-label="links">Contact</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="faq.html" aria-label="links">FAQ</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="https://wefunder.com/swopblock" aria-label="links">INVEST</a>
+                     </li>
+			  <!--
+                     <li class="nav-item">
+                        <button type="button" data-target="#exampleModal" data-toggle="modal"><a class="nav-link custom-btn" aria-label="links">INVEST</a></button>
+                        <!-- <a class="nav-link custom-btn" href="…" aria-label="links">INVEST</a> 
+                     </li>
+		       -->
+                     <li class="nav-item">
+                        <a class="nav-link icon" target="_blank"  href="https://twitter.com/swopblock" aria-label="links"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+
+
+         <!-- /*
+         Working
+         ============================== */ -->
+         <section class="faq">
+            <div style="padding-right:10%; padding-left:10%;" class="container">
+               <div class="row">
+                  <div class="col-12">
+                     <h2>FAQ</h2>
+                  </div>
+               </div>
+               <div class="row">
+			    <div class="col-12">
+                   <hr>
+                     <div class="faq-cont">
+                        <h3>Is Swopblock a blockchain?</h3>
+                        <p>Yes and No. Swopblock is a virtual blockchain that is an abstraction of preexisting blockchains  (i.e. BTC and ETH), therefore Swopblock does not need its own separate database file for trade information. Swopblock’s trade information is embedded within the preexisting blockchains. This enables trades to leverage the proven securities within these preexisting blockchains.</p>
+                     </div>
+
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>Is Swopblock a cryptocurrency?</h3>
+                        <p>Swopblock is a protocol that employs SWOBL (Swopblock's crypto) to operate the Swopblock protocol.</p>
+                     </div>
+
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>What is SWOBL? (pronounced ‘swobble’)</h3>
+                        <p>SWOBL is the trading symbol for Swopblock’s crypto within the Swopblock protocol. Swopblock has created a total of 52,800,000 SWOBL. Each SWOBL is a percentage of the fixed supply of SWOBL and no additional SWOBL will be created. <br>
+				<!--
+			<a data-target="#exampleModal" data-toggle="modal" class="underlineLink" aria-label="links">Invest in SWOBL</a>
+				-->
+                     </div>
+
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>What is the Swopblock Network?</h3>
+                        <p>The Swopblock Network is the collection of cryptocurrency blockchain networks that have been adapted to trade SWOBL, enabling the Swopblock protocol.</p>
+                     </div>
+					 
+					  <hr>
+                     <div class="faq-cont">
+                        <h3>How are Swopblock cross-blockchain trades autonomous?</h3>
+                        <p>Swopblock is a decentralized collection of autonomous agents that collectively execute trades agent-to-agent in response to user trade orders. These autonomous agents build order transactions and execution transactions and broadcast them to the native blockchain networks to fulfill the user’s order. For example, in a user order to exchange BTC for ETH the autonomous agents will build native blockchain order transactions, broadcast these transactions in both blockchain networks and fulfill the order with execution transactions that are broadcast to these networks to complete the order. <br><br>This enables peers to trade without the need to identify a counterparty and eliminates the need of an exchange party. In otherwords Swopblock is a peer-to-autonomous agents-to-peer exchange.</p>
+                     </div>
+
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>What big problem does Swopblock solve? Don’t decentralized exchanges already exist?</h3>
+                        <p>Decentralized crypto exchanges currently only offer trades that are limited to a single crypto market within a specific blockchain platform. Swopblock offers trades on a specific blockchain platform and extends to offer universal cross-blockchain trades.</p>
+                     </div>
+
+                  <hr>
+                 
+                     <div class="faq-cont">
+                        <h3>What makes Swopblock Network unique in the Crypto Market?</h3>
+                        <p>The crypto market has not yet sufficiently solved the exchange security problem. Centralized exchanges have lost or stolen billions worth of cryptos in the last few years. Decentralized exchanges only offer ‘on platform’ exchanges and are not able to perform cross-network/cross-blockchain trading. Of course peers can meet up or use Atomic Swaps, but these exchanges are slow and unresponsive to the continually fluctuating crypto market. The Swopblock exchange protocol solves all three of these problems - offering proven security, universal access, and realtime trades.
+                        </p>
+                     </div>
+                     <div class="col-12">
+                         <div class="row">
+							<img id="largeImg" class="graph" src="img/graph.jpg" alt="Table Comparison">
+							<img id="mobileImg" class="graphMobile" src="img/mobileGraph.jpg" alt="Table Comparison">
+						 </div>
+
+                        <!--<div class="table-2">
+                           <div class="row">
+                              <div class="col-6">
+                                 <div class="table-header-row">
+                                    <h6>Centralized</h6>
+                                    <h6>Decentralized</h6>
+                                    <h6>Atomic Swaps</h6>
+                                    <h6>Swopblock</h6>
+                                 </div>
+                              </div>
+                              <div class="col-2">
+                                 <div class="right-wrong-txt">
+                                    <p>Secure</p>
+                                    <div class="right-wrong-img-bg">
+                                       <img class="icon-img" src="img/1.svg" alt="svg-image">
+                                       <img class="icon-img" src="img/2.svg" alt="svg-image">
+                                       <img class="icon-img" src="img/2.svg" alt="svg-image">
+                                       <img class="icon-img" src="img/2.svg" alt="svg-image">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-2">
+                                 <div class="right-wrong-txt">
+                                    <p>Universal</p>
+                                    <div class="right-wrong-img-bg right-wrong-img-bg2">
+                                       <img class="icon-img" src="img/2.svg" alt="svg-image">
+                                       <img class="icon-img" src="img/1.svg" alt="svg-image">
+                                       <img class="icon-img" src="img/2.svg" alt="svg-image">
+                                       <img class="icon-img" src="img/2.svg" alt="svg-image">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-2">
+                                 <div class="right-wrong-txt">
+                                    <p>Realtime</p>
+                                    <div class="right-wrong-img-bg">
+                                       <img class="icon-img" src="img/2.svg" alt="svg-image">
+                                       <img class="icon-img" src="img/2.svg" alt="svg-image">
+                                       <img class="icon-img" src="img/1.svg" alt="svg-image">
+                                       <img class="icon-img" src="img/2.svg" alt="svg-image">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div> -->
+
+                     </div>
+					 <hr>
+                     <div class="faq-cont">
+						<h3>What exactly does realtime mean?</h3>
+						<p>Swopblock trades happen as fast as central-exchange trading times but without the central-exchange requirement to have your value under their control.</p>
+					 </div>
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>Does Swopblock use Atomic Swaps?</h3>
+                        <p>No. Atomic Swaps rely on Hash Time-Locked Contracts, or HTLCs. This technology can be slow. Bitcoin swaps can take over an hour. As we all know, crypto prices can fluctuate quickly, this can incentivize one party to either wait until the market price fluctuates in favor of their trade, or they simply cancel the order to ensure the trade doesn’t disfavor their own potential value. Also, Atomic Swaps are not available to ALL crypto markets.</p>
+
+                        <p>Swopblock offers market order capabilities that allow peers to buy and sell into and out of a crypto market without the need to identify the counterparty. Traders never lose control of their value. Swopblock trades are autonomous and happen instantly at the realtime market price. This way neither trader can take advantage of time delays and use price fluctuations to their advantage.</p>
+                     </div>
+
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>Does Swopblock use miners or is SWOBL pre-mined?</h3>
+                        <p>All SWOBL is created from the start (totaling 52,800,000 SWOBL). This fixed supply is liquified on an existing blockchain (such as BTC) in order to launch trading on that particular blockchain. And, when new blockchains are brought onto the Swopblock Network, SWOBL will be transferred to the new blockchain in a combination of part voluntary amounts and part protocol determined amounts in order to attract liquidity and begin trading. This allows blockchain developers to avoid centralized exchange listing fees (sometimes in the 10s of millions) and simply customize the Swopblock adapter software to bring their blockchain onto the Swopblock Network.</p>
+                     </div>
+
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>How is the Swopblock Network incentivized?</h3>
+                        <p>Swopblock offers a maximum reward of 1.5625% of each transaction amount as a reward to the party that completes the autonomous trade transaction. This reward covers the native blockchain fees resulting in fee-free trade. Users will (directly or through policy) voluntarily offer native blockchain transaction fees to speed confirmation of orders.</p>
+						<p>Additionally, developers wanting to adapt their blockchain network onto the Swopblock Network will be incentivized by the pre-existing Swopblock Network transferring a protocol determined amount of SWOBL to the new blockchain. Developers control availability of a new blockchain to be added to the Swopblock Network not how and when. How and when happens autonomously, predetermined by the Swopblock protocol.</p>
+                     </div>
+					 <hr>
+                     <div class="faq-cont">
+						<h3>When will sufficient liquidity be reached to launch Swopblock?</h3>
+						<p>The liquidity required to launch Swopblock on BTC and ETH has been provided. This enables the Swopblock APP to begin testing and launching as soon as functional certification allows.</p>
+					 </div>
+
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>How is it possible ANY cryptocurrency blockchain can join the Swopblock Network?</h3>
+                        <p>Swopblock is an open source exchange protocol that provides developers an API for the customization of implementations necessary to join the Swopblock Network. SWOBL essentially acts as a blockchain adaptor to the Swopblock protocol.</p>
+                     </div>
+<!--
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>Do I own SWOBL when I invest in Swopblock?</h3>
+                        <p>Yes. Swopblock has a private issue capital base aggregated into 25,600,000 SWOBL and the crowd funding of an additional 25,600,000 SWOBL is available to the public as an Initial Coin Offering (to be phased in four parts) at a base value of 32 SWOBL for each 1 USD invested equity. Each SWOBL owned is a percentage of the fixed supply of SWOBL and is never diluted by additional creation of new SWOBL. Your ownership is the same percentage of the total ownership. <br><a data-target="#exampleModal" data-toggle="modal" class="underlineLink" aria-label="links">Invest in SWOBL</a></p>
+                     </div>
+-->
+					 <hr>
+                     <div class="faq-cont">
+                        <h3>How will users receive SWOBL?</h3>
+                        <p>First Swopblock will launch on Bitcoin blockchain. Then users will download the Swopblock APP. Next users will enter an address into the Swopblock APP to instantiate their SWOBL. This address is securely provided by Swopblock and distributes SWOBL to user's Swopblock wallet as an opening balance.</p>
+                     </div>
+					 <hr>
+                     <div class="faq-cont">
+                        <h3>When will user's SWOBL gain value?</h3>
+                        <p>SWOBL’s value is determined by the Swopblock protocol that controls the overall SWOBL volume, making it scarce when higher values are needed and plentiful when lower values are sufficient. The Swopblock protocol perfectly balances SWOBL between supply and demand, always providing enough SWOBL available for trade no matter how much supply and demand fluctuate. Therefore SWOBL gains value automatically according to the Swopblock protocol when trading volumes increase and/or when crypto values themselves increase.</p>
+                     </div>
+<!--
+                     <hr>
+			
+                     <div class="faq-cont">
+                        <h3>What’s the potential of my initial SWOBL investment?</h3>
+                        <p>Let's say bitcoin's market capitalization is worth about one trillion USD. If the Swopblock ICO captured 1% of 1% (that's 1/10,000) of the one trillion dollar bitcoin market then the ICO SWOBL supply would have a market capitalization of $100 million. That would mean 1 SWOBL equals nearly 2 USD making your initial $1k investment worth about $32k. Using this scenario, if Bitcoin’s market capitalization doubled in the following year so would the value of your investment, your $64k becomes $128k. That would be a 12,800% ROI.</p>
+                     </div>
+-->
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>How can I contribute to the development of Swopblock?</h3>
+                        <p>You can contribute at <a class="underlineLink" href="https://www.github.com/swopblock/swopblock">Github.com/Swopblock</a></p>
+                     </div>
+
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>Is Swopblock patented?</h3>
+                        <p>A Patent Application is being filed and open source licensing includes a royalty-free worldwide paid-up license granted to developers who abide by the Swopblock protocol specifications. This ensures the compatibility of future protocol implementations that adopt existing blockchains into the Swopblock Network.</p>
+                     </div>
+					 
+					 <!--How
+ are Swopblock cross-chain trades autonomous?
+Swopblock
+ is a decentralized collection of autonomous bots that collectively execute trades bot-to-bot in response to user trade orders. These autonomous bots build order transactions and execution transactions and broadcast them to the native blockchain networks to
+ fulfill the user’s order. For example, in a user order to exchange BTC for ETH the autonomous bots will build native blockchain order transactions, broadcast these transactions in both blockchain networks and fulfill the order with execution transactions that
+ are broadcast to these networks to complete the order.
+
+This
+ enables peers to trade without the need to identify a counterparty and eliminates the need of an exchange party. In otherwords Swopblock is a peer-to-bot-to-bot-to-peer exchange.
+
+Does
+ Swopblock use miners or is the SWOBL pre-mined?
+No.
+ All SWOBL is created from the start (a 51,200,000 SWOBL initial coin offering, ICO). This initial supply is created as an abstraction on an existing blockchain (such as BTC) in order to launch trading on that particular blockchain. And, when new blockchains
+ are brought onto the Swopblock Network, that new blockchain is issued its own supply of 51,200,000 SWOBL. Swopblock essentially duplicates itself without diluting the value of the ICO supply of 51,200,000 SWOBL. This process continues and propagates the Swopblock
+ Network as more and more cryptos are brought onto it. This allows blockchain developers to avoid centralized exchange listing fees (sometimes in the 10s of millions) and simply customize the Swopblock plugin to bring their blockchain onto the Swopblock Network. 
+
+How
+ is the Swopblock Network incentivized?
+Swopblock
+ offers a maximum reward of 1.5625% of each transaction amount as a reward to the party that completes the autonomous trade transaction. This reward covers the native blockchain fees resulting in fee-free trade. Users will (directly or through policy) voluntarily
+ offer native blockchain transaction fees to speed confirmation of orders. -->
+
+                     <hr>
+                     <div class="faq-cont">
+                        <h3>Have another question?</h3>
+                        <p>Email us at <a class="underlineLink" href="mailto:info@swopblock.org">info@Swopblock.org</a>	</p>
+                     </div>
+
+                      <hr class="pb-3">
+
+                  </div>
+                 
+               </div>
+            </div>
+         </section>
+
+         <!-- /*
+            Working
+         ============================== */ -->
+         <section class="working">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 spaceImgTop">
+                     <div class="main-img">
+                        <img src="img/launch.jpg" alt="image">
+                     </div>
+                             <h4 style="color: #718b9d; font-feature-settings: normal; letter-spacing: -0.01rem;"><span>Join our development team.</span><br> Help launch BTC, ETH, and more<br>onto the Swopblock Network.</h4>
+                     <a href="https://github.com/swopblock/swopblock">JOIN US</a>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 spaceImg">
+                     <div class="main-img">
+                        <img src="img/seed.jpg" alt="image" style="width: 90%;">
+                     </div>
+                     <h4 style="color: #718b9d; font-feature-settings: normal; letter-spacing: -0.01rem;"><span>Invest in Swopblock.</span>
+			     <!-- <br>Bonus 36 SWOBL for every $1 invested. -->
+			      <br>WeFunder.com crowd<br>funding now open.</h4>
+			  <!--
+                     <button type="button" data-target="#exampleModal" data-toggle="modal"><a aria-label="button-links">INVEST</a></button>
+                     <p class="fineprint">*Swopblock has a private issue capital<br>base that is signified by the symbol SWOBL.</p>
+			-->
+			<a href="https://wefunder.com/swopblock">INVEST</a>
+
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog spaceThank">
+               <div class="modal-content" id="displaychange">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body"  id="confirmEmail">
+                     <h2>PHASE TWO OPENS<br> <span>APRIL 22</span></h2>
+                     <form id="invest" class="sign-up-orm popup-form" onsubmit="PostMessage();return false;">
+                        <label style="font-family:guidaBold;" for="receive" name="receive">GET REMINDERS & INFO<br> FOR PRE-SEED INVESTING.</label>
+                        <input id="receive" type="email" placeholder="your email">
+                        <a onclick="PostMessage('receive');" style="cursor:pointer;" aria-label="button-links">SIGN UP</a>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- /*
+         Footer
+         ============================== */ -->
+         <footer class="footer">
+            <div class="container-fluid">
+               <div class="row align-items-center">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                     <img src="img/footer-logo.jpg" alt="Footer-logo">
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                     <form class="sign-up-orm" action="">
+                        <label style=" font-family: 'guidaBold'; font-feature-settings: 'ss01'; for="news" name="newsletter">SIGN UP FOR THE LATEST NEWS.<br>GET INVESTOR INFO & MORE.</label>
+                        <input id="news" type="email" placeholder="your email">
+                        <a data-target="#exampleModal" data-toggle="modal" onclick="PostMessage('news');" style="cursor:pointer;" aria-label="button-links">SIGN UP</a>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <div class="col-12 copy">
+            <div class="container">
+               <p align="center"  style="font-family: 'guidaBold'; font-feature-settings: 'ss01';">© 2O22 Swopblock</p>
+            </div>
+         </div>
+      </main>
+
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+      <script src="js/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
