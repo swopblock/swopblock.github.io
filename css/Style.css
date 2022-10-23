@@ -104,6 +104,11 @@ src: url("../fonts/guida-bold-pro.otf");
 	color:inherit;
 }
 
+span a {
+	text-decoration:none;
+	color:inherit;
+}
+
 
 /*mobile nav */
 @media screen and (max-width: 600px) {
