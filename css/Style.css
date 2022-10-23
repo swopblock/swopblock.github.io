@@ -152,6 +152,7 @@ src: url("../fonts/guida-bold-pro.otf");
 .mainMobile{
 	display:block;
 	height: 650vw;
+	margin-top: 124vw;
 }
 
 .MobileFloatCont{
