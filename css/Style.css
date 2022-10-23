@@ -94,17 +94,7 @@ src: url("../fonts/guida-bold-pro.otf");
 	margin-left: 12vw;
 	margin-top:4vw;
 }
-.navTop a {
-	text-decoration:none;
-	color:inherit;
-}
-
-.menu a {
-	text-decoration:none;
-	color:inherit;
-}
-
-span a {
+a {
 	text-decoration:none;
 	color:inherit;
 }
