@@ -26,18 +26,18 @@
 				<div class="navLink">
 					<a href="technology.html">TECHNOLOGY</a>
 				</div>
-				<div class="navLink">
+				<!--<div class="navLink">
 					<a href="">PAPER</a>
-				</div>
+				</div>-->
 				<div class="navLink">
-					<a href="https://www.github.com/Swopblock/swop">GITHUB</a>
+					<a target="_blank" href="https://www.github.com/Swopblock/swop">GITHUB</a>
 				</div>
 				<div class="navLink">
 					<a href="contact.html">
 					CONTACT
 					</a>
 				</div>
-				<div class="navLink navBorder"><a href="https://wefunder.com/Swopblock">INVEST</a>
+				<div class="navLink navBorder"><a target="_blank" href="https://wefunder.com/Swopblock">INVEST</a>
 				</div>
 				<a target="_blank" href="https://www.twitter.com/Swopblock">
 					<div class="navLink navTwitter"></div>
@@ -62,7 +62,7 @@
 		  <div class="menu textbold">
                 <a href="mission.html"><span id="mobileabout">MISSION</span></a>
                 <a href="technology.html"><span id="mobileprojects">TECHNOLOGY</span></a>
-                <a target="_blank" href="SwopblockPaper.pdf"><span id="mobileprojects">PAPER</span></a>
+                <!--<a target="_blank" href="SwopblockPaper.pdf"><span id="mobileprojects">PAPER</span></a>-->
 				<a href="contact.html"><span id="mobileprojects">CONTACT</span></a>
 				<a target="_blank" href="https://www.github.com/Swopblock/swop"><span id="mobileprojects">GITHUB</span></a>
 				<a target="_blank" href="https://wefunder.com/Swopblock"><span class="pink" style="color: #FF18B9;" id="mobileprojects">INVEST</span></a>
@@ -88,7 +88,7 @@
 					Crypto’s first automated trading network<br>powered by 100% distributed liquidity.
 					</div>
 					<div style="margin-top:4vw;">
-						<span class="leftFloatButton"><a href="https://wefunder.com/swopblock">WATCH VIDEO</a></span>
+						<span class="leftFloatButton"><a target="_blank" href="https://wefunder.com/swopblock">WATCH VIDEO</a></span>
 					</div>
 				</div>
 			</div>
@@ -141,7 +141,7 @@
 					The Swopblock Network is powered by SWOBL (Swopblock’s crypto), which acts as a liquidity adaptor for blockchains such as ETH, BTC, and more - meaning Swopblock’s Liquidity Stream is 100% distributed to SWOBL owners.
 					</div>
 					<div style="margin-top:4vw;">
-						<span class="leftButton"><a href="https://wefunder.com/swopblock">LEARN MORE</a></span>
+						<span class="leftButton"><a href="technology.html">LEARN MORE</a></span>
 					</div>
 				</div>
 			</div>
@@ -159,7 +159,7 @@
 			</div>
 			<div class="buttonSpec arrowButton" style="border-color: #00e100; color: #00e100; float: left;">
 				<div class="buttonSpace">
-					<a href="https://wefunder.com/swopblock">WATCH VIDEO</a><span class="doubleForward">&#x00BB;</span>
+					<a target="_blank" href="https://wefunder.com/swopblock">WATCH VIDEO</a><span class="doubleForward">&#x00BB;</span>
 				</div>
 			</div>
 		</div>
@@ -225,7 +225,7 @@
 			</span>
 			<div class="buttonSpec arrowButton" style="">
 				<div class="buttonSpace">
-					<a href="https://wefunder.com/swopblock">WATCH VIDEO</a><span class="doubleForward">&#x00BB;</span>
+					<a target="_blank" href="https://wefunder.com/swopblock">WATCH VIDEO</a><span class="doubleForward">&#x00BB;</span>
 				</div>
 			</div>
 			</div>
@@ -247,7 +247,7 @@
 					</div>
 					<div class="buttonSpec arrowButton">
 					<div class="buttonSpace" >
-						<a href="https://wefunder.com/swopblock">WEFUNDER</a><span class="doubleForward">&#x00BB;</span>
+						<a target="_blank" href="https://wefunder.com/swopblock">WEFUNDER</a><span class="doubleForward">&#x00BB;</span>
 					</div>
 				</div>
 				</div>
@@ -267,7 +267,7 @@
 					</div>
 					<div class="buttonSpec arrowButton">
 					<div class="buttonSpace">
-						<a href="https://github.com/swopblock/swop">GITHUB</a><span class="doubleForward">&#x00BB;</span>
+						<a target="_blank" href="https://github.com/swopblock/swop">GITHUB</a><span class="doubleForward">&#x00BB;</span>
 					</div>
 				</div>
 				</div>
@@ -277,13 +277,16 @@
 	<div class="fullWidth">
 		<div class="handshakeTitle">
 			<div class="signUpDiv">
+			<span class="blue">Follow us on <a href="https://www.twitter.com/Swopblock"><span class="pink" style="text-decoration:underline;">Twitter</span></a><br>to keep up to date!</span><br>
+			<div style="display:none;">
 				<span class="blue">Never miss an update!</span><br>
 				<div style="height:2vw;"></div>
 				<input type="text" id="EmailSignUp" placeholder="EMAIL ADDRESS">
-				<div class="buttonSpec regButton">
+				<div onclick="PostMessage('EmailSignUp');" class="buttonSpec regButton">
 					<div class="buttonSpace">
 						SIGN UP
 					</div>
+				</div>
 				</div>
 			</div>
 			

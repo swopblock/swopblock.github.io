@@ -26,9 +26,9 @@
 				<div class="navLink">
 					<a href="technology.html">TECHNOLOGY</a>
 				</div>
-				<div class="navLink">
+				<!--<div class="navLink">
 					<a href="">PAPER</a>
-				</div>
+				</div>-->
 				<div class="navLink">
 					<a target="_blank" href="https://www.github.com/Swopblock/swop">GITHUB</a>
 				</div>
@@ -37,7 +37,7 @@
 					CONTACT
 					</a>
 				</div>
-				<div class="navLink navBorder"><a href="https://wefunder.com/Swopblock">INVEST</a></div>
+				<div class="navLink navBorder"><a target="_blank" href="https://wefunder.com/Swopblock">INVEST</a></div>
 				<a target="_blank" href="https://www.twitter.com/Swopblock">
 					<div class="navLink navTwitter"></div>
 				</a>
@@ -61,7 +61,7 @@
              <div class="menu textbold">
                 <a href="mission.html"><span id="mobileabout">MISSION</span></a>
                 <a href="technology.html"><span id="mobileprojects">TECHNOLOGY</span></a>
-                <a target="_blank" href="SwopblockPaper.pdf"><span id="mobileprojects">PAPER</span></a>
+                <!--<a target="_blank" href="SwopblockPaper.pdf"><span id="mobileprojects">PAPER</span></a>-->
 				<a href="contact.html"><span id="mobileprojects">CONTACT</span></a>
 				<a target="_blank" href="https://www.github.com/Swopblock/swop"><span id="mobileprojects">GITHUB</span></a>
 				<a target="_blank" href="https://wefunder.com/Swopblock"><span class="pink" style="color: #FF18B9;" id="mobileprojects">INVEST</span></a>
@@ -161,7 +161,7 @@
 					</div>
 					<div class="buttonSpec arrowButton">
 					<div class="buttonSpace" >
-						<a href="https://wefunder.com/swopblock">WEFUNDER</a><span class="doubleForward">&#x00BB;</span>
+						<a target="_blank" href="https://wefunder.com/swopblock">WEFUNDER</a><span class="doubleForward">&#x00BB;</span>
 					</div>
 				</div>
 				</div>
@@ -181,7 +181,7 @@
 					</div>
 					<div class="buttonSpec arrowButton">
 					<div class="buttonSpace">
-						<a href="https://github.com/swopblock/swop">GITHUB</a><span class="doubleForward">&#x00BB;</span>
+						<a target="_blank" href="https://github.com/swopblock/swop">GITHUB</a><span class="doubleForward">&#x00BB;</span>
 					</div>
 				</div>
 				</div>
@@ -191,13 +191,16 @@
 	<div class="fullWidth">
 		<div class="handshakeTitle">
 			<div class="signUpDiv">
+			<span class="blue">Follow us on <a href="https://www.twitter.com/Swopblock"><span class="pink" style="text-decoration:underline;">Twitter</span></a><br>to keep up to date!</span><br>
+			<div style="display:none;">
 				<span class="blue">Never miss an update!</span><br>
 				<div style="height:2vw;"></div>
 				<input type="text" id="EmailSignUp" placeholder="EMAIL ADDRESS">
-				<div class="buttonSpec regButton">
+				<div onclick="PostMessage('EmailSignUp');" class="buttonSpec regButton">
 					<div class="buttonSpace">
 						SIGN UP
 					</div>
+				</div>
 				</div>
 			</div>
 			
