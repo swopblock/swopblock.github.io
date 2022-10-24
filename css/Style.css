@@ -157,7 +157,7 @@ a {
     width: 80%;
 }
 .MobileFloatTitle{
-	font-size: 11vw;
+	font-size: 9vw;
 }
 .MobileFloatText{
 	font-size: 5.2vw;
@@ -446,7 +446,8 @@ width:18vw;
 	}
 	.greenLeft{
 	display:inline-block;
-	height:175vw;
+	padding-top:15vw;
+	height:165vw;
 	width:100%;
 	background-color:rgba(0,221,0,1.00);
 	float:left;
@@ -454,7 +455,8 @@ width:18vw;
 
 .greenRight{
 	display:inline-block;
-	height:175vw;
+	padding-top:15vw;
+	height:165vw;
 	width:100%;
 	background-color:rgba(146,255,0,1.00);
 	float:right;
