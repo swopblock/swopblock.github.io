@@ -262,6 +262,7 @@ a {
 	padding-top:12vw;
 	font-family: GuidaBoldPro;
 	font-size: 4.5vw;
+	line-height: 1.05;
 	font-feature-settings: "ss01";
 }
 
@@ -298,6 +299,7 @@ a {
 @media screen and (min-width: 600px) {
 .handshakeTitle{
 	font-family: GuidaBoldPro;
+	line-height: 1.05;
 	font-size: 4.5vw;
 	font-feature-settings: "ss01";
 }
@@ -318,11 +320,13 @@ a {
 	.leftFloatTitle {
 	padding-top:26vw;
 	font-family: GuidaBoldPro;
+	line-height: 1.05;
 	font-size: 4.5vw;
 	font-feature-settings: "ss01";
 }
 	.handshakeTitle{
 	font-family: GuidaBoldPro;
+	line-height: 1.05;
 	font-size: 9.5vw;
 	font-feature-settings: "ss01";
 }
